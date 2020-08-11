@@ -22,8 +22,8 @@ jobs:
           - 1.41.0 # MSRV
           - stable
         target:
-          - thumbv7em-none-eabi
           - wasm32-unknown-unknown
+          - i686-unknown-linux-gnu
     steps:
       - uses: actions/checkout@v1
       - uses: actions-rs/toolchain@v1
