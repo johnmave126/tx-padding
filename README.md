@@ -29,4 +29,4 @@ at your option.
 [docs-link]: https://docs.rs/tx-padding/
 [license-image]: https://img.shields.io/badge/license-Apache2.0/MIT-blue.svg
 [build-image]: https://github.com/johnmave126/tx-padding/workflows/tea/badge.svg?branch=master&event=push
-[build-link]: https://github.com/johnmave126/tx-padding/actions?query=workflow:tea+branch:master
+[build-link]: https://github.com/johnmave126/tx-padding/actions?query=workflow:tx-padding+branch:master
