@@ -1,4 +1,4 @@
-name: tea
+name: tx-padding
 
 on:
   push:
