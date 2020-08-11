@@ -103,12 +103,9 @@ where
         let pad_zero = block_size - 1;
         let pad_len = ((-(pos as isize) - 2).rem_euclid(block_size as isize)) as usize + 2;
         buf.copy_within(..pos, 1 + pad_len);
-        if DefaultRng::default()
+        DefaultRng::default()
             .try_fill_bytes(&mut buf[1..1 + pad_len])
-            .is_err()
-        {
-            Err(PadError)?
-        }
+            .map_err(|_| PadError)?;
         buf[0] = !((block_size - 1) as u8) | (pad_len - 2) as u8;
 
         // SAFETY: will use slice::fill after it stabilizes

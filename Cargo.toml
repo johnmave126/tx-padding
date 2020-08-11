@@ -1,6 +1,6 @@
 [package]
 name = "tx-padding"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Youmu"]
 edition = "2018"
 description = "A block padding scheme with prepended random bytes and trailing zeros"
