@@ -1,0 +1,32 @@
+[package]
+name = "tx-padding"
+version = "0.1.0"
+authors = ["Youmu"]
+edition = "2018"
+description = "A block padding scheme with prepended random bytes and trailing zeros"
+license = "MIT OR Apache-2.0"
+documentation = "https://docs.rs/tx-padding"
+repository = "https://github.com/johnmave126/tx-padding"
+keywords = ["crypto", "padding"]
+categories = ["cryptography", "no-std"]
+readme = "README.md"
+exclude = [
+    ".github/**",
+    ".gitignore",
+]
+
+[features]
+thread_rng = []
+
+[dependencies.block-padding]
+version = "0.2"
+
+[dependencies.typenum]
+version = "1.12"
+default-features = false
+
+[dependencies.rand]
+version = "0.7"
+default-features = false
+features = ["getrandom"]
+
