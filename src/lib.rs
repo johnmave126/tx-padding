@@ -58,6 +58,7 @@ type DefaultRng = rand::rngs::OsRng;
 #[cfg(features = "thread_rng")]
 type DefaultRng = rand::ThreadRng;
 
+#[derive(Clone, Copy, Debug)]
 pub enum TxPadding<N> {
     _Phantom(Infallible, PhantomData<N>),
 }
